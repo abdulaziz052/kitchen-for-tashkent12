@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="pt-5 md:pb-[63px] pb-[44px]">
+        <div class="max-w-[1240px] px-5 mx-auto">
+            <div class="flex justify-between items-center">
+
+                <!-- responsive menu start-->
+                <button id="hamburger-menu" class="flex md:hidden mr-[6px]">
+                    <img src="./img/hamburger-menu.svg" alt="">
+                </button>
+                <div id="responsive-menu" style="transition: .5s all;"
+                    class="z-30 transition-all md:hidden block     px-20  bg-[#a5c83c] fixed top-0 -left-full">
+                    <div class="flex items-center justify-between ml-[-49px] pt-[27px] ">
+                        <button id="close-menu">
+                            <i class="fa-solid fa-xmark fa-2xl" style="color: #fff;"></i>
+                        </button>
+                    </div>
+                    <ul class="text-center pt-[60px] flex flex-col gap-[48px] ">
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="./index.html">Menu</a>
+                        </li>
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="./menu.html">Delivery</a>
+                        </li>
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="./terms-and-conditions.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="font-bold text-2xl text-[#FFFAF1]" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <ul class="flex items-center justify-center gap-[32px] pb-[289px] pt-[30px]">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- responsive menu end -->
+
+
+                <a href="index.html">
+                    <img class="w-[103px] md:w-[183px]" src="./img/Logo.png" alt="">
+                </a>
+                <a class="font-bold flex md:hidden items-center  gap-[5px]" href="en">
+                    EN
+                    <img src="./img/down.svg" alt="">
+                </a>
+                <button class="md:hidden bg-[#FFA800] rounded-full px-[4px] py-[4px]">
+                    <img src="./img/human.svg" alt="">
+                </button>
+
+                <ul class="hidden md:flex items-center gap-16">
+                    <li>
+                        <a class="font-medium text-[16px] leading-4 text-[#302929] hover:text-[#B0CC0D] hover:border-[#B0CC0D] transition-all hover:border-b-2"
+                            href="#menu">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[16px] leading-4 text-[#302929] hover:text-[#B0CC0D] hover:border-[#B0CC0D] transition-all hover:border-b-2"
+                            href="./menu.html">
+                            Delivery
+                        </a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[16px] leading-4 text-[#302929] hover:text-[#B0CC0D] hover:border-[#B0CC0D] transition-all hover:border-b-2"
+                            href="./terms-and-conditions.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[16px] leading-4 text-[#302929] hover:text-[#B0CC0D] hover:border-[#B0CC0D] transition-all hover:border-b-2"
+                            href="#">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+                <div class="hidden md:flex items-center">
+                    <a class="font-bold text-base leading-4 flex items-center gap-[4px]" href="tel:591 902 883">
+                        <img src="./img/phone.svg" alt="">
+                        591 902 883
+                    </a>
+                    <a class="font-bold flex items-center ml-[37px] mr-[39px] gap-[5px]" href="en">
+                        EN
+                        <img src="./img/down.svg" alt="">
+                    </a>
+                    <button
+                        class="bg-[#FFA800] font-bold text-[#FFFFFF] text-base py-[8px] pr-[23px] flex items-center uppercase leading-5 hover:bg-[#B0CC0D] transition-all rounded-[32px] pl-[5px]">
+                        <img class="pr-[20px]" src="./img/human.svg" alt="">
+                        sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="md:pt-[77px] md:pb-[27px] md:placeholder:pb-7">
+        <div class="max-w-[1240px] mx-auto px-5">
+            <div class="md:flex hidden justify-between items-start">
+                <div style="box-shadow: 0px 0px 18px 0px #00000021;"
+                    class="bg-white pb-[51px] md:flex hidden mr-[102px] w-full pt-4 border rounded-[10px] max-w-[203px]">
+                    <ul>
+                        <li class="hover:bg-[#F4F4F4] w-full pl-4 pr-7"><a
+                                class="flex items-center pt-[13px] pb-[14px] gap-4 text-[#302929] font-medium text-base leading-4"
+                                href=""><img src="./img/section/menu.svg" alt="">Меню</a></li>
+                        <li class="hover:bg-[#F4F4F4] w-full pl-4 pr-8"><a
+                                class="flex items-center pt-[13px] pb-[14px] gap-4 text-[#302929] font-medium text-base leading-4"
+                                href=""><img src="./img/section/order.svg" alt="">Заказы</a></li>
+                        <li class="hover:bg-[#F4F4F4] w-full pl-4 pr-8"><a
+                                class="flex items-center pt-[13px] pb-[14px] gap-4 mb-[404px] text-[#302929] font-medium text-base leading-4"
+                                href=""><img src="./img/section/delivery.svg" alt="">Доставки</a></li>
+                        <li class="hover:bg-[#F4F4F4] w-full pl-4 pr-8"><a
+                                class="flex items-center pt-[13px] pb-[14px] text-[#302929] font-medium text-base leading-4 gap-[19px]"
+                                href=""><img src="./img/section/service.svg" alt="">Настройки</a></li>
+                        <li class="hover:bg-[#F4F4F4] w-full pl-4 pr-8"><a
+                                class="flex items-center pt-[13px] pb-[14px] text-[#302929] font-medium text-base leading-4 gap-[11px]"
+                                href=""><img src="./img/section/Avatarka.svg" alt="">Иван Иванов</a></li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <h2 class="mb-5 font-bold text-2xl leading-6 md:flex hidden">Заголовок</h2>
+                    <p class="mb-8 font-medium text-base leading-4 md:flex hidden">Другой текст описание или что-то еще
+                    </p>
+                    <div class="grid w-full grid-cols-2 justify-between gap-16">
+                        <div class="">
+                            <div class="">
+                                <div class="flex justify-between max-w-[485px] w-full items-center mb-6">
+                                    <h3 class="text-[#B0B0B0] font-medium text-xl leading-[30px]">1. Billing Details
+                                    </h3>
+                                    <button id="arrowBtn" class=""><img src="./img/heroSection/Vector (6).svg"
+                                            alt=""></button>
+                                </div>
+                                <form id="form" class="hidden flex-col grid-cols-2 gap-1.5" action="">
+                                    <input
+                                        class="border-[#E7E7E7] font-medium text-base leading-6 border rounded-[7px] pl-7 pt-1.5 pb-[11px] mb-[25px]"
+                                        type="text" placeholder="First name*">
+                                    <input
+                                        class="border-[#E7E7E7] font-medium text-base leading-6 border rounded-[7px] pl-7 pt-1.5 pb-[11px] mb-[25px]"
+                                        type="email" placeholder="Email*">
+                                    <label class="flex items-center border-[#E7E7E7] border rounded-[7px] mb-6" for="">
+                                        <input class="pt-[5px] pb-[5px] pr-[11px] pl-7 outline-none border-none"
+                                            type="text" placeholder="Address*" name="" id="">
+                                        <img src="./img/heroSection/arcticons_maps.svg" alt="">
+                                    </label>
+                                    <input
+                                        class="pt-[9px] pb-3 pl-6 mb-6 text-[#637381] text-base font-medium border leading-6  rounded-[7px]"
+                                        placeholder="Phone*" type="number">
+                                    <input
+                                        class="pt-[9px] pb-3 mb-[23px] pl-6 text-[#637381] text-base font-medium border leading-6  rounded-[7px]"
+                                        placeholder="Код домофона" type="password">
+                                    <input
+                                        class="pt-[9px] pb-3 mb-[23px] pl-6 text-[#637381] text-base font-medium border leading-6  rounded-[7px]"
+                                        placeholder="Код от лифта" type="password">
+                                    <textarea placeholder="Additional information" name="" id=""
+                                        class="text-[#637381] pt-[13px] w-full pl-[25px] col-span-2 pb-11 border border-[#E7E7E7] rounded-[7px]"
+                                        cols="30" rows=""></textarea>
+                                </form>
+                            </div>
+                            <div class="mb-9">
+                                <div class="flex justify-between max-w-[485px] w-full items-center mb-6">
+                                    <h3 class="text-[#B0B0B0] font-medium text-xl leading-[30px]">2. Payment
+                                    </h3>
+                                    <button id="arrowBtn" class=""><img src="./img/heroSection/Vector (6).svg"
+                                            alt=""></button>
+                                </div>
+                                <form id="form" action=""
+                                    class="pt-7 flex-col pl-10 hidden pb-8 pr-[31px] border border-[#E7E7E7] rounded-[7px]">
+                                    <div class="flex items-center">
+                                        <input id="Direct" type="radio" name="s"><label
+                                            class="text-[#637381] font-medium text-base leading-6 ml-3 mr-[25px]"
+                                            for="Direct">Direct Bank Transfer</label>
+                                        <div class="flex items-center gap-[10px]">
+                                            <img src="./img/heroSection/paypal-seeklogo.com 2 1.svg" alt="">
+                                            <img src="./img/heroSection/Vector (7).svg" alt="">
+                                            <img src="./img/heroSection/Group 1000002733.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center mt-[14px] mb-[14px]">
+                                        <input id="Cash" type="radio" name="s"><label
+                                            class="text-[#637381] font-medium text-base leading-6 ml-3" for="Cash">Cash
+                                            on delivery</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input id="Online" type="radio" name="s"><label
+                                            class="text-[#637381] font-medium text-base leading-6 ml-3"
+                                            for="Online">Online Getway</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="mb-11">
+                                <div class="flex justify-between max-w-[485px] w-full items-center mb-6">
+                                    <h3 class="text-[#B0B0B0] font-medium text-xl leading-[30px]">3. Deduct bonus points
+                                    </h3>
+                                    <button id="arrowBtn" class=""><img src="./img/heroSection/Vector (6).svg"
+                                            alt=""></button>
+                                </div>
+                                <div class="hidden" id="form">
+                                    <form id="" action=""
+                                        class="pt-5 pb-[27px] w-full flex-col  mb-[13px] pl-[29px] border border-[#E7E7E7] rounded-[7px]">
+                                        <h5 class="font-bold text-sm leading-6 mb-[15px]"><span
+                                                class="text-[#3C9F34]">25
+                                                points </span>are available to you</h5>
+                                        <label for="grid grid-cols-2 gap-[11px] w-full max-w-">
+                                            <input type="number"
+                                                class="max-w-[253px] py-3 border border-[#E7E7E7] rounded-[5px] pl-[17px] pr-[31px]"
+                                                placeholder="Enter number of ...">
+                                            <button
+                                                class="py-[9px] text-sm bg-[#FFA800] hover:shadow-2xl transition-all text-white font-bold rounded-[10px] leading-[30px] px-[40px]">Deduct</button>
+                                        </label>
+                                    </form>
+                                    <form id="" action=""
+                                        class="pt-5 pb-[27px]  flex-col w-full pl-[29px] border border-[#E7E7E7] rounded-[7px]">
+                                        <h5 class="font-bold text-sm leading-6 mb-[15px]"><span
+                                                class="text-[#3C9F34]">25
+                                                points </span>are available to you</h5>
+                                        <label for="flex gap-[16px] w-full max-w-">
+                                            <input type="password"
+                                                class="max-w-[253px] py-3 border pr-[31px] border-[#E7E7E7] rounded-[5px] pl-[17px]"
+                                                placeholder="Coupon code">
+                                            <button
+                                                class="py-[9px] text-sm bg-[#212B36] hover:shadow-2xl transition-all text-white font-bold rounded-[10px] leading-[30px] px-[23px]">Apply
+                                                Code</button>
+                                        </label>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button
+                                class="py-[18px] px-20 hover:shadow-2xl bg-[#B0CC0D] rounded-[5px] flex text-white font-medium text-base leading-6">Place
+                                an Order</button>
+                        </div>
+                        <div class="max-w-[280px] mx-auto flex flex-col">
+                            <h3 class="font-semibold text-lg mb-[23px] leading-[30px]">Your Order</h3>
+                            <div
+                                class="max-w-[280px] w-full pt-[27px] px-[20px] pb-[54px] border mb-5 border-[#E7E7E7] rounded-[10px]">
+                                <p class="text-[#637381] mb-[19px] font-medium text-sm leading-6">21st Mart 2021 at
+                                    10:34 PM</p>
+                                <div class="flex items-center">
+                                    <img class="w-[51px] h-[42px] mr-[11px]" src="./img/section/jk.png" alt="">
+                                    <div class="w-full mb-[11px]">
+                                        <div class="flex justify-between">
+                                            <h6 class="mr-[9px] text-[#212B36] text-[16px] leading-6 font-medium">
+                                                Slim menu</h6>
+                                            <span class="mr-[29px] text-[#212B36] text-sm leading-6 font-semibold">X
+                                                1</span>
+                                            <span class="text-[#212B36] text-sm leading-6 font-semibold">$36.00</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <p class="text-[#637381] font-medium text-xs leading-5">Color: White</p>
+                                            <p class="text-[#637381] font-medium text-xs leading-5">Size: Medium</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <img class="w-[51px] h-[42px] mr-[11px]" src="./img/section/jk.png" alt="">
+                                    <div class="w-full mb-[11px]">
+                                        <div class="flex justify-between">
+                                            <h6 class="mr-[9px] text-[#212B36] text-[16px] leading-6 font-medium">
+                                                Slim menu</h6>
+                                            <span class="mr-[29px] text-[#212B36] text-sm leading-6 font-semibold">X
+                                                1</span>
+                                            <span class="text-[#212B36] text-sm leading-6 font-semibold">$36.00</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <p class="text-[#637381] font-medium text-xs leading-5">Color: White</p>
+                                            <p class="text-[#637381] font-medium text-xs leading-5">Size: Medium</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-[25px]">
+                                    <img class="w-[51px] h-[42px] mr-[11px]" src="./img/section/jk.png" alt="">
+                                    <div class="w-full">
+                                        <div class="flex justify-between">
+                                            <h6 class="mr-[9px] text-[#212B36] text-[16px] leading-6 font-medium">
+                                                Slim menu</h6>
+                                            <span class="mr-[29px] text-[#212B36] text-sm leading-6 font-semibold">X
+                                                1</span>
+                                            <span class="text-[#212B36] text-sm leading-6 font-semibold">$36.00</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <p class="text-[#637381] font-medium text-xs leading-5">Color: White</p>
+                                            <p class="text-[#637381] font-medium text-xs leading-5">Size: Medium</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <p class="text-[#212B36] font-medium text-xs md:text-base leading-6 mb-4">Subtotal
+                                    </p>
+                                    <span class="text-[#212B36] font-medium text-xs md:text-base leading-6">$106</span>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <p class="text-[#212B36] font-medium text-xs md:text-base leading-6 mb-4">Shipping
+                                        Cost (+)</p>
+                                    <span
+                                        class="text-[#212B36] font-medium text-xs md:text-base leading-6">$10.85</span>
+                                </div>
+                                <div class="flex justify-between ">
+                                    <p class="text-[#212B36] font-medium text-xs md:text-base leading-6 mb-4">
+                                        Discount (-)</p>
+                                    <span class="text-[#212B36] font-medium text-xs md:text-base leading-6">$9.00</span>
+                                </div>
+                                <hr class="mb-[14px] text-[#E7E7E7]">
+                                <div class="flex justify-between mb-5">
+                                    <p class="text-[#212B36] font-medium text-xs md:text-base leading-6 mb-4">Total
+                                        Payable</p>
+                                    <span
+                                        class="text-[#212B36] font-medium text-xs md:text-base leading-6">$107.85</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

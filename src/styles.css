@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#Direct {
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px #B0CC0D;
+    appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    transition: all ease-in 0.2s;
+
+}
+
+#Direct:checked {
+    background-color: #B0CC0D;
+}
+
+#Cash {
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px #B0CC0D;
+    appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    transition: all ease-in 0.2s;
+
+}
+
+#Cash:checked {
+    background-color: #B0CC0D;
+}
+
+#Online {
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px #B0CC0D;
+    appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    transition: all ease-in 0.2s;
+
+}
+
+#Online:checked {
+    background-color: #B0CC0D;
+}
+
+
+b {
+    text-transform: uppercase;
+}
+
+.active {
+    background-color: #B0CC0D !important;
+    color: white !important;
+}
+
+.active svg {
+    color: white !important;
+}
+
+.active h6 {
+    color: white !important;
+}
+
+.active2 {
+    background-color: #B0CC0D !important;
+}
+
+.active2 h4 {
+    color: white !important;
+    text-decoration: underline white !important;
+}
+
+.active2 p {
+    color: white !important;
+    text-decoration: underline white !important;
+
+}
+
+.active3 {
+    background-color: white !important;
+}
+
+.swiper-pagination1 {
+    color: white !important;
+    border-color: white !important;
+    fill: white !important;
+
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid white !important;
+    border-color: white !important;
+    opacity: 1;
+    background-color: inherit;
+}
+
+
+
+.swiper-pagination-bullet-active {
+    color: white !important;
+    border-color: white !important;
+    background-color: white !important;
+
+}
